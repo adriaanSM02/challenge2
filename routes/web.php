@@ -25,4 +25,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/orders', [OrdersController::class, 'ordersDB'])->name('orders');
+Route::get('/sales', function () {
+    return view('sales');
+});
+
+Route::get('/orders', 
+[OrdersController::class, 'ordersDB'])->
+name('orders');
