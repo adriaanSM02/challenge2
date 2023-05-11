@@ -1,0 +1,52 @@
+.new-order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #167CA5;
+    padding: 20px;
+    border-radius: 20px;
+
+  }
+
+  .new-order-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    max-width: 500px;
+    margin-right: 10px;
+  }
+
+ 
+
+  .new-order-label {
+    color: white;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 28px;
+  }
+
+  .new-order-input {
+    margin-right: 10px;
+    
+  }
+
+  .new-order-input input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #3b82f6;
+    padding: 4px;
+    width: 100%;
+  }
+
+  .new-order-submit {
+  background-color: #051644;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
