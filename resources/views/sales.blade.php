@@ -14,85 +14,10 @@
 
 
 
-    <style>
-      /* Estilos para la barra de navegación */
+    @include('layout.navbar')
+</head>
+<body>
 
-      body{
-        margin:0;
-      }
-      nav {
-    
-        background-color: #051644;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-      }
-      nav img {
-        height: 50px;
-        margin-left: 10px;
-      }
-      nav ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      nav li {
-        margin-right: 10px;
-      }
-      nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-      }
-      
-      /* Estilos para el buscador */
-      #search {
-        margin-right: 10px;
-      }
-      #search input[type="text"] {
-        border-radius: 4px;
-        padding: 6px;
-        border: none;
-        width: 200px;
-      }
-      #search button {
-        background-color: #167CA5;
-        color: white;
-        border-radius: 4px;
-        border: none;
-        padding: 6px 10px;
-        cursor: pointer;
-      }
-      #search button:hover {
-        background-color: darkblue;
-      }
-      #logout {
-  background-color: #167CA5;
-}
-    </style>
-  </head>
-  <body>
-    <nav>
-   
-    <img src="/challenge2/Challenge2/resources/img/halconLogo.png">
-      <ul>
-        <li><a href="#">Sales</a></li>
-        <li><a href="#">Purchasing</a></li>
-        <li><a href="#">Warehouse</a></li>
-        <li><a href="#">Route</a></li>
-        <li><a href="#">Check Package</a></li>
-      </ul>
-
-      <div id="search">
-        <input type="text" placeholder="Buscar...">
-        <button type="submit">Search</button>
-      </div>
-
-    </nav>
-    
     <br/>
  
     <style>
@@ -156,11 +81,13 @@
       <input type="text" placeholder="Invoice Number"  style="width: 400px;">
     </div>
   </div>
+
   <div class="new-order-box">
     <div class="new-order-input">
       <input type="text" placeholder="Number of Rows" style="width: 400px;">
     </div>
   </div>
+
 <button type="submit" class="new-order-submit">Submit</button>
 
 </div>
@@ -243,7 +170,6 @@
 <button id="update" class="btn-large"  style="background-color: #167CA5; color: white;">Update</button>
 
 
-</script>
 
   </body>
 </html>

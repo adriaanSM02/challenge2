@@ -29,6 +29,12 @@ Route::get('/sales', function () {
     return view('sales');
 });
 
+
+Route::get('/login', function () {
+    return view('login');
+});
+
 Route::get('/orders', 
 [OrdersController::class, 'ordersDB'])->
 name('orders');
+
